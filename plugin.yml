@@ -1,0 +1,8 @@
+name: TicketSupport
+main: PJSoft\TicketSupport\Main
+version: 1.0.0
+api: [3.0.0]
+load: POSTWORLD
+author: PJSoft
+desctiption: PocketMine-MP TicketSupport Plugin
+website: http://pjsoft.asvd.net/
