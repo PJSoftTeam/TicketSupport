@@ -6,3 +6,15 @@ load: POSTWORLD
 author: PJSoft
 desctiption: PocketMine-MP TicketSupport Plugin
 website: http://pjsoft.asvd.net/
+permissions:
+  ticketsupport.*:
+    default: true
+    description: "Allows using all the ThisPlugin things"
+    children:
+      ticketsupport.command.*:
+        default: true
+        description: "Allows using all the ThisPlugin commands"
+        children:
+          ticketsupport.command.ticket:
+            default: true
+            description: "Allows all the ticket command"

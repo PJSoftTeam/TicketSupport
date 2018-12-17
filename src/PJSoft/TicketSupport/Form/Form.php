@@ -68,7 +68,17 @@
         {
             $formData = array(
                 "type" => "form",
-                "title" => "Engg Choose",
+                "title" => $this->owner->lang->translateString("form.select.title"),
+                "content" => $this->owner->lang->translateString("form.select.content"),
+                "buttons" => array(
+                    array(
+                        "text" => $this->owner->lang->translateString("form.select.ticket.open"),
+                        "image" => array(
+                            "type" => "path",
+                            "data" => "textures/items/apple",
+                        ),
+                    ),
+                ),
             );
         }
         

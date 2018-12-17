@@ -27,7 +27,12 @@
     {
         /** @var array */
         private const DEFAULT_LANGUAGE_DATA = array(
-            "form.title.select" => "Select",
+            "language.name" => "English",
+            "command.ticket.description" => "Send Ticket UI",
+            "command.ticket.usage" => "/ticket",
+            "form.select.title" => "TicketSystem",
+            "form.select.content" => "Please select option",
+            "form.select.ticket.open" => "Open Ticket",
         );
         
         /** @var string */

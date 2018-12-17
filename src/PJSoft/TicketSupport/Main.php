@@ -20,6 +20,7 @@
     
     namespace PJSoft\TicketSupport;
     
+    use PJSoft\TicketSupport\Command\TicketCommand;
     use PJSoft\TicketSupport\Form\Form;
     use PJSoft\TicketSupport\Lang\Language;
     use PJSoft\TicketSupport\Listener\FormReceive;
@@ -62,7 +63,7 @@
             //Register Event
             $this->getServer()->getPluginManager()->registerEvents(new FormReceive($this), $this);
             //Register Command
-            
+            $this->getServer()->getCommandMap()->register("ticket", new TicketCommand($this));
             //Config Init
             //$this->setting = new Config($this->getDataFolder() . "setting.yml", Config::YAML);
             $this->tickets = new Config($this->getDataFolder() . "tickets.yml", Config::YAML);
